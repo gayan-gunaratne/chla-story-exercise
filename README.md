@@ -16,14 +16,14 @@ Each sampling trip profiles multiple depths (0, 10, 20, 30, 40 m and bottom) as 
 | `SampleDepth_m` | Depth of sample (0–bottom or `WC`) | m |
 | `CphlA_mgm3` | Chlorophyll-*a* concentration | mg m⁻³ |
 
-> **Note on flags:** Before analysis, filter out rows where the relevant variable's flag is `9` (not measured). Flag `2` indicates data of questionable quality — consider how you handle these values and document your decision.
+> **Note on flags:** Before analysis, filter out rows where the relevant variable's flag is `9` (not measured). Flag `2` indicates data of questionable quality. Consider how you handle these values and document your decision.
 
-> **Note on units:** Chl-a in this dataset is in mg m⁻³. We typically report Chl-a in mg/L
+> **Note on units:** Chl-a in this dataset is in mg m⁻³. We typically report Chl-a in mg/L.
 ---
 
 ## Your Task
 
-The Rottnest Island NRS sits at the boundary of oligotrophic offshore waters and the seasonally productive coastal zone of southwest Western Australia. Chlorophyll-*a* is a primary indicator of phytoplankton biomass and ecosystem productivity — but its story varies by season, depth, and community composition.
+The Rottnest Island NRS sits at the boundary of oligotrophic offshore waters and the seasonally productive coastal zone of southwest Western Australia. Chlorophyll-*a* is a primary indicator of phytoplankton biomass and ecosystem productivity but its story varies by season, depth, and community composition.
 
 **Your task is to explore and communicate the Chl-*a* story in this dataset.**
 
@@ -32,14 +32,14 @@ The Rottnest Island NRS sits at the boundary of oligotrophic offshore waters and
 1. **Clean & prepare** the dataset
    - Parse dates correctly
    - Handle quality flags appropriately
-   - Separate depth-profile samples from WC (water column) integrated samples — these are different measurement types and should be treated differently
+   - Separate depth-profile samples from WC (water column) integrated samples, these are different measurement types and should be treated differently
 
-2. **Visualise** — produce at least one clear figure (subplots welcome). Suggested directions:
+2. **Visualise** - produce at least one clear figure (subplots welcome). Suggested directions:
    - Surface (0 - 2 m) Chl-*a* time series with seasonal context
    - Depth-time heatmap showing timeseries Chl-a profile data
    - Seasonal cycle (e.g. monthly climatology)
 
-3. **Summarise** — a few bullet points describing:
+3. **Summarise** - a few bullet points describing:
    - The dominant seasonal patterns you observe
    - Any long-term trends or inter-annual variability
    - Gaps, anomalies, or caveats in the data
@@ -50,8 +50,8 @@ The Rottnest Island NRS sits at the boundary of oligotrophic offshore waters and
 
 Please email your work **one day before the 2nd round interview** as:
 
-- **Script** — a Jupyter notebook (`.ipynb`), R Markdown (`.Rmd`), or MATLAB script (`.m`)
-- **Short Summary** — a 2-page summary (Word, PDF, HTML, or Markdown) including your key findings and plot(s)
+- **Script** - a Jupyter notebook (`.ipynb`), R Markdown (`.Rmd`), or MATLAB script (`.m`)
+- **Short Summary** - a 2-page summary (Word, PDF, HTML, or Markdown) including your key findings and plot(s)
 
 ---
 
@@ -65,10 +65,10 @@ Please email your work **one day before the 2nd round interview** as:
 
 We are looking for:
 
-- **Data handling** — correct treatment of flags, mixed sample types, and missing values
-- **Visualisation** — clear, well-labelled figures that tell a story without clutter
-- **Scientific interpretation** — does the narrative reflect an understanding of coastal marine ecology?
-- **Communication** — concise written summary accessible to a non-specialist audience
+- **Data handling** - correct treatment of flags, mixed sample types, and missing values
+- **Visualisation** - clear, well-labelled figures that tell a story without clutter
+- **Scientific interpretation** - does the narrative reflect an understanding of coastal marine ecology?
+- **Communication** - concise written summary accessible to a non-specialist audience
 
 You do not need to produce a polished report. Clarity of thinking and code quality matter more than completeness.
 
