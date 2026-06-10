@@ -27,7 +27,7 @@ The Rottnest Island NRS sits at the boundary of oligotrophic offshore waters and
 
 **Your task is to explore and communicate the Chl-*a* story in this dataset.**
 
-### Minimum requirements
+### Suggested Approach
 
 1. **Clean & prepare** the dataset
    - Parse dates correctly
