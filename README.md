@@ -51,7 +51,7 @@ The Rottnest Island NRS sits at the boundary of oligotrophic offshore waters and
 Please email your work **one day before the 2nd round interview** as:
 
 - **Script** - a Jupyter notebook (`.ipynb`), R Markdown (`.Rmd`), or MATLAB script (`.m`)
-- **Short Summary** - a 2-page summary (Word, PDF, HTML, or Markdown) including your key findings and plot(s)
+- **Tech Note** - a 2-page document (Word, PDF, HTML, or Markdown) including your key findings and plot(s)
 
 ---
 
