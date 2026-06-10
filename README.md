@@ -15,20 +15,10 @@ Each sampling trip profiles multiple depths (0, 10, 20, 30, 40 m and bottom) as 
 | `SampleDate_Local` | Sampling date | DD/MM/YYYY |
 | `SampleDepth_m` | Depth of sample (0–bottom or `WC`) | m |
 | `CphlA_mgm3` | Chlorophyll-*a* concentration | mg m⁻³ |
-| `DvCphlA_mgm3` | Divinyl Chlorophyll-*a* (prokaryote proxy) | mg m⁻³ |
-| `DvCphlA_CphlA_mgm3` | Total Chl-*a* (monovinyl + divinyl) | mg m⁻³ |
-| `Fuco_mgm3` | Fucoxanthin (diatom/dinoflagellate pigment) | mg m⁻³ |
-| `Perid_mgm3` | Peridinin (dinoflagellate pigment) | mg m⁻³ |
-| `Zea_mgm3` | Zeaxanthin (cyanobacteria pigment) | mg m⁻³ |
-| `Salinity` | Salinity | PSU |
-| `Oxygen_umolL` | Dissolved Oxygen | µmol L⁻¹ |
-| `Ammonium_umolL` | Ammonium | µmol L⁻¹ |
-| `Nitrate_umolL` | Nitrate | µmol L⁻¹ |
-| `SecchiDepth_m` | Secchi depth (water clarity) | m |
-| `*_flag` | Quality flags: `1` = good, `9` = missing/not measured | — |
 
 > **Note on flags:** Before analysis, filter out rows where the relevant variable's flag is `9` (not measured). Flag `2` indicates data of questionable quality — consider how you handle these values and document your decision.
 
+> **Note on units:** Chl-a in this dataset is in mg m⁻³. We typically report Chl-a in mg/L
 ---
 
 ## Your Task
@@ -45,22 +35,14 @@ The Rottnest Island NRS sits at the boundary of oligotrophic offshore waters and
    - Separate depth-profile samples from WC (water column) integrated samples — these are different measurement types and should be treated differently
 
 2. **Visualise** — produce at least one clear figure (subplots welcome). Suggested directions:
-   - Surface (0 m) Chl-*a* time series with seasonal context
-   - Depth-time heatmap showing the DCM (deep chlorophyll maximum)
+   - Surface (0 - 2 m) Chl-*a* time series with seasonal context
+   - Depth-time heatmap showing timeseries Chl-a profile data
    - Seasonal cycle (e.g. monthly climatology)
-   - Accessory pigment breakdown (Fuco, Perid, Zea) as a proxy for community composition
-   - Relationship between Chl-*a* and a co-measured variable (e.g. nutrients, Secchi depth, oxygen)
 
 3. **Summarise** — a few bullet points describing:
    - The dominant seasonal patterns you observe
    - Any long-term trends or inter-annual variability
    - Gaps, anomalies, or caveats in the data
-
-### Stretch (optional)
-
-- Compute a climatological mean depth profile and show the typical DCM depth
-- Investigate whether the divinyl fraction (`DvCphlA_mgm3`) shows distinct seasonal behaviour from total Chl-*a*
-- Compare surface Chl-*a* against Secchi depth and discuss the relationship
 
 ---
 
@@ -69,13 +51,13 @@ The Rottnest Island NRS sits at the boundary of oligotrophic offshore waters and
 Please email your work **one day before the 2nd round interview** as:
 
 - **Script** — a Jupyter notebook (`.ipynb`), R Markdown (`.Rmd`), or MATLAB script (`.m`)
-- **Short Summary** — a 1-page summary (Word, PDF, HTML, or Markdown) including your key findings and plot(s)
+- **Short Summary** — a 2-page summary (Word, PDF, HTML, or Markdown) including your key findings and plot(s)
 
 ---
 
 ## Estimated Time
 
-⏱ **45–60 minutes**
+⏱ **60–120 minutes**
 
 ---
 
