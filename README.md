@@ -25,9 +25,8 @@ Each sampling trip profiles multiple depths (0, 10, 20, 30, 40 m and bottom) as 
 You are acting as a consultant supporting a client working in Cockburn Sound.
 
 Assume the client is undertaking a hypothetical activity (e.g. port development, aquaculture, discharge, or similar). Based on your understanding of that activity, provide advice on potential environmental impacts informed by the available baseline data.
-Your task is to explore and communicate the Chl-a (chlorophyll-a) story to the client.
 
-**Your task is to explore and communicate the Chl-*a* story in this dataset.**
+**Your task is to explore and communicate the Chl-*a* story to the client.**
 
 ### Suggested Approach
 
